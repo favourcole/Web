@@ -1,0 +1,116 @@
+tr:nth-child(even){
+    background-color: red;
+  } 
+  
+  
+  tr:hover{
+      background-color: purple;
+  }
+  
+  body{
+      height: 100%;
+      background: rgb(4, 32, 42);
+      background: radial-gradient(
+          circle,
+          rgb(4, 32, 42,1) 88%,
+          rgb(219, 55, 85) 12%
+      );
+  }
+     
+  .window{
+    padding-left: 6px;
+
+}
+    
+  
+  h1 { 
+      position: relative; 
+      text-align: center;
+      padding: 2%;
+      font-family: 'Times New Roman', Times, serif, Arial, Helvetica;
+      font-size: 170%;
+  
+  }
+  
+  p  { 
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif, Arial, Helvetica;
+      color: white ;
+      font-size: 120%;
+      padding-left: 6%;
+      
+  }
+  
+
+  
+  table { 
+      text-align: center;
+      color: white;
+      font-family: 'Times New Roman', Times, serif, Arial, Helvetica;
+      font-size: 120%;
+      padding-left: 6%;
+  
+  }
+  
+  td, th { 
+  border: 1.5px solid white;
+  background-color: rgba(255, 192, 203, 0.741);
+  
+  }
+  
+  th { 
+  background-color: rgba(244, 48, 87, 0.741);         
+  
+  }
+  
+  table, td, th {
+  border-radius: 10px;
+  
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Open Sans";
+  }
+  
+  
+  .loader-container{
+      width: 100%;
+      height: 100vh;
+      background-color: #111;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .loader{
+      width: 50px;
+      height: 50px;
+      border: 5px solid;
+      color: #3498db;
+      border-radius: 50%;
+      border-top-color: transparent;
+      animation: loader 1.2s linear infinite;
+  } 
+  
+  @keyframes loader{
+      25%{
+          color: #2ecc71;
+      }
+      50%{
+          color: #f1c40f;
+      }
+      75%{
+          color: #e74c3c;
+      }
+      to{
+          transform: rotate(360deg);
+      }
+  }
+  /* When the load is processing it displays these different colours in a rotation motion for a particular amount of time. */
+  
+  
